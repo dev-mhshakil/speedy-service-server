@@ -1,0 +1,58 @@
+[
+    {
+        "service_id": "01",
+        "title": "Wedding Photographer",
+        "img": "https://i.ibb.co/YW3jGkL/wedding.jpg",
+        "description": "I am a specialist wedding photographer based in Bangladesh. I was a qualified engineer for years before deciding to go back to college and classically train as a photographer, some 5 years ago! I've created a life here in Bangladesh over the past 24 years. I enjoy exploring Asia and beyond and meeting people from all over the world. I love creating beautiful images full of connection and joy, with the most magical light I can find. Nothing is more rewarding than happy clients tearing up when they see their family photographs and telling me how much they enjoyed their photoshoot with me! My favorite things to do, when I am not behind a camera, is spending time with my family and cranking up the aircon, snuggling under fleecy blankets,watching movies and cooking up some yummy food. I feel very lucky to have a job that I love and am so passionate about. It still thrills me to see my work up in people’s homes knowing I have played a part in preserving memories for family to treasure for generations to come.",
+        "price": "5000",
+        "rating": "4.7"
+    },
+    {
+        "service_id": "02",
+        "title": "Journalism Photographer",
+        "img": "https://i.ibb.co/2W2wT3z/journalism.jpg",
+        "description": "I am a specialist journalism photographer based in Bangladesh. I was a qualified engineer for years before deciding to go back to college and classically train as a photographer, some 5 years ago! I've created a life here in Bangladesh over the past 24 years. I enjoy exploring Asia and beyond and meeting people from all over the world. I love creating beautiful images full of connection and joy, with the most magical light I can find. Nothing is more rewarding than happy clients tearing up when they see their family photographs and telling me how much they enjoyed their photoshoot with me! My favorite things to do, when I am not behind a camera, is spending time with my family and cranking up the aircon, snuggling under fleecy blankets,watching movies and cooking up some yummy food. I feel very lucky to have a job that I love and am so passionate about. It still thrills me to see my work up in people’s homes knowing I have played a part in preserving memories for family to treasure for generations to come.",
+        "price": "10000",
+        "rating": "4.8"
+    },
+    {
+        "service_id": "03",
+        "title": "Wild Photographer",
+        "img": "https://i.ibb.co/m4DHNs1/wild.jpg",
+        "description": "I am a specialist wild photographer based in Bangladesh. I was a qualified engineer for years before deciding to go back to college and classically train as a photographer, some 5 years ago! I've created a life here in Bangladesh over the past 24 years. I enjoy exploring Asia and beyond and meeting people from all over the world. I love creating beautiful images full of connection and joy, with the most magical light I can find. Nothing is more rewarding than happy clients tearing up when they see their family photographs and telling me how much they enjoyed their photoshoot with me! My favorite things to do, when I am not behind a camera, is spending time with my family and cranking up the aircon, snuggling under fleecy blankets,watching movies and cooking up some yummy food. I feel very lucky to have a job that I love and am so passionate about. It still thrills me to see my work up in people’s homes knowing I have played a part in preserving memories for family to treasure for generations to come.",
+        "price": "8000",
+        "rating": "4.5"
+    },
+    {
+        "service_id": "04",
+        "title": "Parcel Delivery",
+        "img": "https://i.ibb.co/027z0CW/percel.jpg",
+        "description": "I am providing percel delivery to you. I will try to deliver your percel to your given address as soon as possible. I have 3 years experience in percel delivery. I have been working with a lot of people. If you want to trust a person with your valueable percel then that person can be me. I try to give the best service i can. Parcel delivery is a transport service that moves parcels or goods from the sender to the recipient within a short period of time. It requires the carrier to make at least one stop at a platform for the goods to be sorted before being delivered. Mostly used in the context of traditional distribution, mass distribution or mass production, parcel delivery transport is based on the notion of speed of execution.",
+        "price": "150",
+        "rating": "4.3"
+    },
+    {
+        "service_id": "05",
+        "title": "Food Delivery",
+        "img": "https://i.ibb.co/SN43VcY/food.jpg",
+        "description": "I am providing food delivery to you. I will try to deliver your food to your given address as soon as possible. I have 3 years experience in food delivery. I have been working with a lot of people. I try to give the best service i can. Food delivery service is somewhat similar to courier service in which the ordered food is delivered from the restaurant to the customer either by the restaurant's staff or by delivery agents of a food ordering company. This obviously depends on the medium through which a customer places his/her order.",
+        "price": "200",
+        "rating": "4.4"
+    },
+    {
+        "service_id": "06",
+        "title": "Lawyer",
+        "img": "https://i.ibb.co/pbzDjN3/lawyer.webp",
+        "description": "I am a lawyer and i have 5 year in experience. A Lawyer, or Attorney, is responsible for using their specialized knowledge of national, state or local laws to help their clients receive fair representation in a court of law. Their duties include meeting with clients to determine their needs, coordinating with Legal Assistants and other legal professionals to compile documents and speaking on behalf of their clients in court. Preparing all documents required to file cases, including briefs and other court documents. Working closely with team members to prepare a comprehensive brief on each case that goes to trial. Scheduling and conducting depositions of witnesses and experts. Researching legal concepts, case law, judicial opinions, statutes and regulations. Providing proper legal citation and statutory interpretation. Making sure all parties are carrying out their court order sentence and paying the necessary fines.",
+        "price": "8000",
+        "rating": "4.9"
+    },
+    {
+        "service_id": "07",
+        "title": "Doctor",
+        "img": "https://i.ibb.co/KbYWGyS/doctor.jpg",
+        "description": "A doctor is responsible for all sides of care of a patient. They diagnose, educate, and treat patients to ensure that they have the best possible care. A few of the main duties of a doctor are performing diagnostic tests, recommending specialists for patients, document patient's medical history, and educating patients. They also have to administer vaccines and other treatments. Some of the jobs titles that a doctor could grow into are head of research or hospital president. A doctor should have at least 4 years of experience in residency as well as a doctorate degree from an accredited medical school. One of the most important skills that a doctor will have is their ability to diagnose their patients. Another skill is empathy as the doctor will need to relate to their patients. They also need to be able to multitask by working with several different patients.",
+        "price": "4000",
+        "rating": "5"
+    }
+]
