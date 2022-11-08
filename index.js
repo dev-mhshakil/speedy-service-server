@@ -24,10 +24,11 @@ async function run() {
     const serviceCollection = client
       .db("speedy-service")
       .collection("services");
+    const reviewCollection = client.db("speedy-service").collection("reviews");
 
     app.get("/services", async (req, res) => {
       const query = {};
-      const cursor = serviceCollection.find(query);
+      const cursor = serviceCollection.find(query).sort();
       const services = await cursor.toArray();
       res.send(services);
     });
@@ -51,6 +52,20 @@ async function run() {
       const service = req.body;
       const result = await serviceCollection.insertOne(service);
       res.send(result);
+    });
+
+    app.post("/reviews", async (req, res) => {
+      const review = req.body;
+      const result = await reviewCollection.insertOne(review);
+      res.send(result);
+    });
+
+    app.get("/reviewsByPost/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { id: id };
+      const cursor = reviewCollection.find(query);
+      const reviews = await cursor.toArray();
+      res.send(reviews);
     });
   } finally {
   }
