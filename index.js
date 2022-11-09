@@ -12,7 +12,6 @@ app.use(express.json());
 const port = process.env.PORT || 5000;
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.wdkgpff.mongodb.net/?retryWrites=true&w=majority`;
-console.log(uri);
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -42,7 +41,7 @@ async function run() {
 
     app.get("/services/:id", async (req, res) => {
       const id = req.params.id;
-      console.log(id);
+      // console.log(id);
       const query = { _id: ObjectId(id) };
       const service = await serviceCollection.findOne(query);
       res.send(service);
@@ -71,6 +70,19 @@ async function run() {
       const query = { _id: ObjectId(id) };
       const result = await reviewCollection.deleteOne(query);
       res.send(result);
+    });
+
+    app.patch("/reviews/:id", async (req, res) => {
+      const id = req.params.id;
+      const text = req.body.text;
+      const query = { _id: ObjectId(id) };
+      const updateDoc = {
+        $set: {
+          text: text,
+        },
+      };
+      const result = await reviewCollection.updateOne(query, updateDoc);
+      // res.send(result);
     });
 
     app.post("/reviews", async (req, res) => {
