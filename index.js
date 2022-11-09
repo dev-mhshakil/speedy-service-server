@@ -28,10 +28,10 @@ function verifyJWT(req, res, next) {
       .send({ message: "unauthorized access", status: 401 });
   }
   const token = authHeader.split(" ")[1];
-  console.log(token);
+  // console.log(token);
   jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, function (err, decoded) {
     if (err) {
-      console.log("error", err);
+      // console.log("error", err);
       return res
         .status(403)
         .send({ message: "unauthorized access", status: 403 });
@@ -65,14 +65,14 @@ async function run() {
 
     app.get("/services", async (req, res) => {
       const query = {};
-      const cursor = serviceCollection.find(query);
+      const cursor = serviceCollection.find(query).sort({ time: -1 });
       const services = await cursor.toArray();
       res.send(services);
     });
 
     app.get("/services-limited", async (req, res) => {
       const query = {};
-      const cursor = serviceCollection.find(query);
+      const cursor = serviceCollection.find(query).sort({ time: -1 });
       const limitedService = await cursor.skip(0).limit(3).toArray();
       res.send(limitedService);
     });
@@ -120,7 +120,7 @@ async function run() {
       const id = req.params.id;
       const text = req.body.text;
 
-      console.log("updated", id, text);
+      // console.log("updated", id, text);
       const query = { _id: ObjectId(id) };
       const updateDoc = {
         $set: {
@@ -128,7 +128,7 @@ async function run() {
         },
       };
       const result = await reviewCollection.updateOne(query, updateDoc);
-      console.log(result);
+      // console.log(result);
       res.send(result);
     });
 
